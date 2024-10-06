@@ -127,7 +127,7 @@ def send_schedule(message):
         return
 
     if message.text == "Тренування":
-        response = "Тренування:\n" + "\n".join(schedule[day]["Тренування"])
+        response = "Тренування 07:00:\n" + "\n".join(schedule[day]["Тренування 07:00"])
     elif message.text == "Раціон":
         response = "Раціон:\n"
         for meal, info in schedule[day]["Раціон"].items():
